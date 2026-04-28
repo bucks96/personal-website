@@ -102,7 +102,7 @@
 
   /* ---------- RAG API call ---------- */
   async function askRAG(question) {
-    const res = await fetch('/api/chat', {
+    const res = await fetch('https://personal-website-production-3270.up.railway.app', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ question }),
