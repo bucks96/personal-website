@@ -1,0 +1,9 @@
+.DS_Store
+*.pyc
+*.pyo
+__pycache__/
+.env
+venv/
+.venv/
+backend/chroma_db/
+backend/interactions.db

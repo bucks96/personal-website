@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vaibhav Sachan — Product, projects & free-fall</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,0..100,0..1&family=Geist:wght@300..700&family=JetBrains+Mono:wght@400;500;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=3" />
+</head>
+<body>
+
+<!-- top index / sticky chrome -->
+<header class="chrome" id="chrome">
+  <div class="chrome-left">
+    <span class="mono">VS</span>
+    <span class="mono dim">/ portfolio / 2026</span>
+  </div>
+  <nav class="chrome-nav">
+    <a href="#intro" data-nav="intro" class="active">01 Hello</a>
+    <a href="#work" data-nav="work">02 Work</a>
+    <a href="#projects" data-nav="projects">03 Tinkering</a>
+    <a href="#extras" data-nav="extras">04 Off-hours</a>
+  </nav>
+  <div class="chrome-right mono">
+    <span class="dot"></span>
+    <span id="now-label">currently free-falling</span>
+  </div>
+</header>
+
+<!-- ============ 01 INTRO ============ -->
+<section id="intro" class="section section--intro" data-screen-label="01 Intro">
+  <div class="intro-grain"></div>
+
+  <div class="intro-grid">
+    <div class="intro-eyebrow mono">
+      <span>★</span> Bengaluru / Hyderabad / occasionally 13,000ft above France
+    </div>
+
+    <h1 class="intro-title">
+      <span class="line">Hi, I'm </span>
+      <span class="line"><span class="serif-italic">Vaibhav</span><span class="amp">.</span></span>
+      <span class="line subline">I make products, <span class="serif-italic">jump out</span> of planes,</span>
+      <span class="line subline">and write a lot of <span class="mono-inline">SELECT *</span>.</span>
+    </h1>
+
+    <div class="intro-portrait">
+      <div class="portrait-frame">
+        <img src="IMG_2775.jpg" alt="Vaibhav at Kelingking Beach, Nusa Penida, Bali" class="portrait-img" />
+        <div class="portrait-tape tape-tl"></div>
+        <div class="portrait-tape tape-br"></div>
+      </div>
+      <div class="portrait-caption mono">↑ Kelingking Beach, Nusa Penida</div>
+    </div>
+
+    <div class="intro-bio">
+      <p>
+        Product Manager with <strong>5+ years</strong> across early-stage consumer tech &amp; e-commerce.
+        Recovering software engineer. Currently finishing my MBA at <em>ISB</em>; engineering degree from <em>BITS Pilani</em> before that. GMAT 99.7 percentile, in case anyone's counting.
+      </p>
+      <p class="bio-soft">
+        I've shipped products that drove <strong>₹100Cr+ in cumulative ARR</strong>, but ask me about it on a Tuesday and I'd rather tell you about the time I forgot to pull my parachute on time over Brittany.
+      </p>
+    </div>
+
+    <aside class="intro-facts">
+      <div class="facts-head mono">— Facts, in no particular order</div>
+      <ol class="facts-list">
+        <li><span class="fact-num mono">01</span> Founding-team PM at Supertails (Seed → Series B).</li>
+        <li><span class="fact-num mono">02</span> 8 of 25 solo skydives done. License A pending.</li>
+        <li><span class="fact-num mono">03</span> Built an in-app game in vanilla JS to dodge a sprint shortage.</li>
+        <li><span class="fact-num mono">04</span> National runner-up at SDA Bocconi Prodpreneur (2nd of 700+).</li>
+        <li><span class="fact-num mono">05</span> Plays badminton like it owes him money.</li>
+        <li><span class="fact-num mono">06</span> Has visited Bali enough times to have opinions about warungs.</li>
+      </ol>
+    </aside>
+
+    <div class="intro-marquee">
+      <div class="marquee-track">
+        <span>Product Strategy</span><span>·</span>
+        <span>UX &amp; Research</span><span>·</span>
+        <span>A/B Experimentation</span><span>·</span>
+        <span>0→1</span><span>·</span>
+        <span>SQL · Figma · Claude Code · RAG</span><span>·</span>
+        <span>Product Strategy</span><span>·</span>
+        <span>UX &amp; Research</span><span>·</span>
+        <span>A/B Experimentation</span><span>·</span>
+        <span>0→1</span><span>·</span>
+        <span>SQL · Figma · Claude Code · RAG</span><span>·</span>
+      </div>
+    </div>
+
+    <a href="#work" class="intro-cta">
+      <span>scroll for the receipts</span>
+      <span class="cta-arrow">↓</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ 02 WORK ============ -->
+<section id="work" class="section section--work" data-screen-label="02 Work">
+
+  <div class="work-header">
+    <div class="mono dim">02 / Work</div>
+    <h2 class="work-title">Five years, three companies,<br/>one recurring theme: <span class="serif-italic">make the funnel less leaky.</span></h2>
+    <div class="work-spine mono">
+      <span>2024 — Vaaree</span>
+      <span class="dim">↓</span>
+      <span>2021 — Supertails</span>
+      <span class="dim">↓</span>
+      <span>2017 — HolidayIQ</span>
+    </div>
+  </div>
+
+  <!-- VAAREE: home decor -->
+  <article class="job job--vaaree" id="job-vaaree">
+    <div class="job-bg vaaree-bg"></div>
+    <div class="vaaree-vases" aria-hidden="true">
+      <!-- vase 1 -->
+      <svg class="vase v-pos-1" viewBox="0 0 60 90"><path d="M20 8 Q20 0 30 0 Q40 0 40 8 L38 16 Q50 32 50 56 Q50 80 30 86 Q10 80 10 56 Q10 32 22 16 Z" fill="#c9663f"/><ellipse cx="30" cy="86" rx="20" ry="3" fill="rgba(0,0,0,0.15)"/></svg>
+      <!-- vase 2 -->
+      <svg class="vase v-pos-2" viewBox="0 0 60 90"><path d="M18 4 L42 4 L40 14 L46 22 Q52 36 50 60 Q48 80 30 86 Q12 80 10 60 Q8 36 14 22 L20 14 Z" fill="#a89270"/></svg>
+      <!-- vase 3 -->
+      <svg class="vase v-pos-3" viewBox="0 0 60 90"><path d="M22 6 Q22 2 30 2 Q38 2 38 6 L36 18 Q42 32 42 56 L48 86 L12 86 L18 56 Q18 32 24 18 Z" fill="#5c4a3a"/></svg>
+      <!-- vase 4 round -->
+      <svg class="vase v-pos-4" viewBox="0 0 60 90"><path d="M24 10 L36 10 L34 22 Q56 36 50 60 Q44 84 30 86 Q16 84 10 60 Q4 36 26 22 Z" fill="#e8dcc4" stroke="#5c4a3a" stroke-width="1.5"/></svg>
+      <!-- vase 5 tall -->
+      <svg class="vase v-pos-5" viewBox="0 0 60 90"><path d="M24 4 L36 4 L34 12 Q40 28 38 50 Q36 70 32 86 L28 86 Q24 70 22 50 Q20 28 26 12 Z" fill="#c9663f"/></svg>
+      <!-- vase 6 squat -->
+      <svg class="vase v-pos-6" viewBox="0 0 60 90"><path d="M14 30 Q30 14 46 30 Q54 50 46 76 Q30 88 14 76 Q6 50 14 30 Z" fill="#a89270"/></svg>
+      <!-- vase 7 -->
+      <svg class="vase v-pos-7" viewBox="0 0 60 90"><path d="M22 6 L38 6 L36 16 Q44 30 44 56 Q44 80 30 86 Q16 80 16 56 Q16 30 24 16 Z" fill="#5c4a3a"/></svg>
+      <!-- vase 8 -->
+      <svg class="vase v-pos-8" viewBox="0 0 60 90"><path d="M20 4 L40 4 L38 14 L44 24 Q48 40 46 58 Q44 78 30 86 Q16 78 14 58 Q12 40 16 24 L22 14 Z" fill="#e8dcc4" stroke="#5c4a3a" stroke-width="1"/></svg>
+    </div>
+    <div class="vaaree-carpet" aria-hidden="true">
+      <div class="carpet-roll"></div>
+      <div class="carpet-strip"></div>
+    </div>
+
+    <header class="job-head">
+      <div class="job-meta mono">
+        <span class="job-num">01</span>
+        <span>Jun 2024 — Mar 2025</span>
+        <span>Bengaluru</span>
+      </div>
+      <h3 class="job-name">Vaaree<span class="serif-italic">.</span></h3>
+      <div class="job-role mono">Product Manager — Website &amp; App</div>
+      <p class="job-tag">Pre-Series A e-commerce in home décor.</p>
+    </header>
+
+    <div class="job-body">
+      <p class="job-story">
+        I joined a small team selling beautiful objects to people's living rooms, and was asked
+        to make the app a place those people <em>actually came back to</em>.
+        I led a five-person crew, took over as interim tech lead for nine months,
+        and rebuilt the navigation around what users were actually trying to do.
+        The app went from quiet hallway to <strong>busy showroom</strong>.
+      </p>
+
+      <div class="vaaree-swatches">
+        <div class="swatch swatch-1"><span class="mono">#C9663F</span></div>
+        <div class="swatch swatch-2"><span class="mono">#E8DCC4</span></div>
+        <div class="swatch swatch-3"><span class="mono">#5C4A3A</span></div>
+        <div class="swatch swatch-4"><span class="mono">#A89270</span></div>
+      </div>
+
+      <ul class="metrics metrics-vaaree">
+        <li>
+          <div class="metric-num">1k <span>→</span> 80k</div>
+          <div class="metric-label">MAU in 9 months</div>
+        </li>
+        <li>
+          <div class="metric-num">2×</div>
+          <div class="metric-label">CTR &amp; conversions on key flows</div>
+        </li>
+        <li>
+          <div class="metric-num">20% <span>→</span> 70%</div>
+          <div class="metric-label">Sprint completion as interim TL</div>
+        </li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- SUPERTAILS: pet -->
+  <article class="job job--supertails" id="job-supertails">
+    <div class="job-bg supertails-bg"></div>
+    <div class="pet-scatter" aria-hidden="true">
+      <!-- dog 1 -->
+      <svg class="critter c-pos-1" viewBox="0 0 80 60"><g fill="#5a7a5c"><ellipse cx="44" cy="38" rx="22" ry="14"/><circle cx="22" cy="32" r="11"/><path d="M14 24 L10 18 L18 26 Z"/><path d="M28 26 L24 18 L30 24 Z"/><rect x="28" y="48" width="4" height="10"/><rect x="42" y="48" width="4" height="10"/><rect x="56" y="48" width="4" height="10"/><path d="M64 36 Q72 30 70 24" stroke="#5a7a5c" stroke-width="3" fill="none"/><circle cx="18" cy="32" r="1.5" fill="#1a3020"/></g></svg>
+      <!-- cat 1 -->
+      <svg class="critter c-pos-2" viewBox="0 0 80 60"><g fill="#3d5a3f"><ellipse cx="40" cy="42" rx="24" ry="10"/><circle cx="20" cy="36" r="10"/><path d="M14 28 L12 22 L18 30 Z"/><path d="M26 28 L24 22 L28 30 Z"/><path d="M62 42 Q74 28 68 18 Q66 22 70 28 Q70 36 60 42" /><rect x="28" y="50" width="3" height="6"/><rect x="46" y="50" width="3" height="6"/></g></svg>
+      <!-- dog 2 -->
+      <svg class="critter c-pos-3" viewBox="0 0 80 60"><g fill="#7a5a3a"><ellipse cx="42" cy="38" rx="24" ry="13"/><circle cx="20" cy="34" r="10"/><path d="M14 28 Q10 36 18 38" /><path d="M26 28 Q30 36 24 38" /><rect x="30" y="48" width="4" height="10" rx="1"/><rect x="50" y="48" width="4" height="10" rx="1"/><circle cx="16" cy="34" r="1.5" fill="#2a1a0a"/></g></svg>
+      <!-- cat 2 -->
+      <svg class="critter c-pos-4" viewBox="0 0 80 60"><g fill="#6a8b6c"><ellipse cx="38" cy="44" rx="22" ry="9"/><circle cx="22" cy="38" r="10"/><path d="M16 30 L14 24 L20 32 Z"/><path d="M28 30 L26 24 L30 32 Z"/><path d="M58 46 Q70 36 64 22" stroke="#6a8b6c" stroke-width="2.5" fill="none"/></g></svg>
+      <!-- dog 3 small -->
+      <svg class="critter c-pos-5" viewBox="0 0 80 60"><g fill="#4d6a4f"><ellipse cx="44" cy="40" rx="20" ry="12"/><circle cx="22" cy="36" r="9"/><path d="M14 30 Q10 38 18 38" /><rect x="30" y="48" width="3" height="8"/><rect x="50" y="48" width="3" height="8"/></g></svg>
+      <!-- cat 3 -->
+      <svg class="critter c-pos-6" viewBox="0 0 80 60"><g fill="#2d4a2f"><ellipse cx="40" cy="44" rx="22" ry="9"/><circle cx="22" cy="38" r="9"/><path d="M16 32 L14 26 L20 32 Z"/><path d="M28 32 L26 26 L30 32 Z"/><path d="M58 46 Q70 30 60 18" stroke="#2d4a2f" stroke-width="2.5" fill="none"/></g></svg>
+      <!-- dog 4 -->
+      <svg class="critter c-pos-7" viewBox="0 0 80 60"><g fill="#8b6f47"><ellipse cx="42" cy="38" rx="24" ry="13"/><circle cx="20" cy="34" r="10"/><path d="M14 26 L10 22 L18 28 Z"/><path d="M26 26 L24 20 L30 28 Z"/></g></svg>
+      <!-- cat 4 -->
+      <svg class="critter c-pos-8" viewBox="0 0 80 60"><g fill="#5a7a5c"><ellipse cx="38" cy="44" rx="22" ry="9"/><circle cx="20" cy="38" r="9"/><path d="M14 32 L12 26 L18 32 Z"/><path d="M26 32 L24 26 L28 32 Z"/></g></svg>
+    </div>
+    <!-- walking puppy along left edge -->
+    <div class="puppy-trail" aria-hidden="true">
+      <svg class="puppy" viewBox="0 0 80 60">
+        <g fill="#3d5a3f">
+          <ellipse cx="44" cy="38" rx="22" ry="13"/>
+          <circle cx="22" cy="34" r="11"/>
+          <path d="M14 26 L10 20 L18 28 Z"/>
+          <path d="M26 26 L24 18 L30 26 Z"/>
+          <rect class="leg leg-1" x="28" y="48" width="4" height="10" rx="1"/>
+          <rect class="leg leg-2" x="40" y="48" width="4" height="10" rx="1"/>
+          <rect class="leg leg-3" x="52" y="48" width="4" height="10" rx="1"/>
+          <path d="M66 36 Q74 28 70 22" stroke="#3d5a3f" stroke-width="3" fill="none" class="tail"/>
+          <circle cx="17" cy="34" r="1.6" fill="#1a3020"/>
+          <circle cx="11" cy="36" r="1.2" fill="#1a3020"/>
+        </g>
+      </svg>
+    </div>
+
+    <header class="job-head">
+      <div class="job-meta mono">
+        <span class="job-num">02</span>
+        <span>Nov 2021 — Mar 2024</span>
+        <span>Bengaluru</span>
+      </div>
+      <h3 class="job-name">Supertails<span class="serif-italic">.</span></h3>
+      <div class="job-role mono">Product Manager — Founding team</div>
+      <p class="job-tag">Pet-care e-commerce. Seed → Series B (₹200Cr ARR).</p>
+    </header>
+
+    <div class="job-body">
+      <p class="job-story">
+        Two and a half years of building things from zero for animals (and the humans who love them).
+        We took the app from <em>doesn't exist</em> to most-downloaded and highest-rated in the category.
+        Along the way I built a recommendation engine, ran funnel surgery on every leaky page,
+        and — when engineering was crunched — wrote an in-app mini-game myself in plain JavaScript
+        because nobody else had the time and the data said engagement was the unlock.
+      </p>
+
+      <ul class="metrics metrics-supertails">
+        <li>
+          <div class="metric-num">1M+</div>
+          <div class="metric-label">app downloads · #1 in category</div>
+        </li>
+        <li>
+          <div class="metric-num">+30%</div>
+          <div class="metric-label">Add-to-Cart · ₹50Cr ARR</div>
+        </li>
+        <li>
+          <div class="metric-num">2×</div>
+          <div class="metric-label">search conversion · ₹60Cr ARR</div>
+        </li>
+        <li>
+          <div class="metric-num">+3%</div>
+          <div class="metric-label">AOV via reco engine · ₹10Cr ARR</div>
+        </li>
+        <li>
+          <div class="metric-num">+12%</div>
+          <div class="metric-label">in-app time (the game worked)</div>
+        </li>
+      </ul>
+
+      <div class="supertails-pets" aria-hidden="true">
+        <span class="pet">🐾</span>
+        <span class="pet">🐾</span>
+        <span class="pet">🐾</span>
+      </div>
+    </div>
+  </article>
+
+  <!-- HOLIDAYIQ: travel / boarding pass -->
+  <article class="job job--holidayiq" id="job-holidayiq">
+    <div class="job-bg holidayiq-bg"></div>
+    <div class="holiday-scatter" aria-hidden="true">
+      <!-- mountains -->
+      <svg class="hol h-pos-1" viewBox="0 0 200 100"><path d="M0 90 L50 30 L80 60 L120 20 L170 70 L200 50 L200 100 L0 100 Z" fill="#f5ead0" opacity="0.18"/><path d="M50 30 L60 42 L65 36 L70 44 L50 30 Z" fill="rgba(255,255,255,0.4)"/><path d="M120 20 L130 32 L135 26 L140 36 L120 20 Z" fill="rgba(255,255,255,0.4)"/></svg>
+      <!-- surfboard -->
+      <svg class="hol h-pos-2" viewBox="0 0 30 120"><path d="M15 4 Q22 30 22 60 Q22 90 15 116 Q8 90 8 60 Q8 30 15 4 Z" fill="#f4b83a"/><line x1="15" y1="20" x2="15" y2="100" stroke="#1f4a52" stroke-width="1" opacity="0.4"/></svg>
+      <!-- snorkel mask -->
+      <svg class="hol h-pos-3" viewBox="0 0 80 60"><rect x="10" y="14" width="60" height="28" rx="8" fill="none" stroke="#f5ead0" stroke-width="2" opacity="0.4"/><circle cx="26" cy="28" r="9" fill="rgba(245,234,208,0.2)" stroke="#f5ead0" stroke-width="1.5" opacity="0.5"/><circle cx="54" cy="28" r="9" fill="rgba(245,234,208,0.2)" stroke="#f5ead0" stroke-width="1.5" opacity="0.5"/><path d="M70 28 L74 40 L74 54" stroke="#f5ead0" stroke-width="2" fill="none" opacity="0.4"/></svg>
+      <!-- palm tree -->
+      <svg class="hol h-pos-4" viewBox="0 0 100 140"><path d="M48 40 Q50 90 52 138" stroke="#f5ead0" stroke-width="3" fill="none" opacity="0.4"/><path d="M50 40 Q20 30 4 40 Q20 36 50 40 Z" fill="#f5ead0" opacity="0.4"/><path d="M50 40 Q80 28 96 40 Q80 36 50 40 Z" fill="#f5ead0" opacity="0.4"/><path d="M50 40 Q40 12 28 4 Q42 18 50 40 Z" fill="#f5ead0" opacity="0.4"/><path d="M50 40 Q60 12 72 4 Q58 18 50 40 Z" fill="#f5ead0" opacity="0.4"/></svg>
+      <!-- compass -->
+      <svg class="hol h-pos-5" viewBox="0 0 80 80"><circle cx="40" cy="40" r="32" fill="none" stroke="#f4b83a" stroke-width="1.5" opacity="0.5"/><circle cx="40" cy="40" r="26" fill="none" stroke="#f4b83a" stroke-width="0.8" opacity="0.4"/><path d="M40 14 L44 40 L40 36 L36 40 Z" fill="#f4b83a" opacity="0.7"/><path d="M40 66 L44 40 L40 44 L36 40 Z" fill="rgba(245,234,208,0.5)"/><circle cx="40" cy="40" r="2" fill="#f4b83a"/></svg>
+      <!-- airplane -->
+      <svg class="hol h-pos-6" viewBox="0 0 100 60"><path d="M6 32 L40 26 L60 8 L66 8 L58 28 L82 24 L92 18 L96 22 L86 32 L96 36 L92 40 L82 36 L58 32 L66 52 L60 52 L40 34 L6 32 Z" fill="#f4b83a" opacity="0.55"/></svg>
+      <!-- suitcase -->
+      <svg class="hol h-pos-7" viewBox="0 0 80 60"><rect x="14" y="20" width="52" height="36" rx="3" fill="#f5ead0" opacity="0.4"/><rect x="32" y="12" width="16" height="10" rx="2" fill="none" stroke="#f5ead0" stroke-width="2" opacity="0.5"/><line x1="14" y1="34" x2="66" y2="34" stroke="#1f4a52" stroke-width="1" opacity="0.5"/></svg>
+      <!-- waves -->
+      <svg class="hol h-pos-8" viewBox="0 0 240 40"><path d="M0 20 Q20 8 40 20 T80 20 T120 20 T160 20 T200 20 T240 20" stroke="#f5ead0" stroke-width="1.5" fill="none" opacity="0.45"/><path d="M0 30 Q20 18 40 30 T80 30 T120 30 T160 30 T200 30 T240 30" stroke="#f5ead0" stroke-width="1.5" fill="none" opacity="0.3"/></svg>
+      <!-- sun -->
+      <svg class="hol h-pos-9" viewBox="0 0 80 80"><circle cx="40" cy="40" r="14" fill="#f4b83a" opacity="0.55"/><g stroke="#f4b83a" stroke-width="2" opacity="0.55"><line x1="40" y1="6" x2="40" y2="18"/><line x1="40" y1="62" x2="40" y2="74"/><line x1="6" y1="40" x2="18" y2="40"/><line x1="62" y1="40" x2="74" y2="40"/><line x1="16" y1="16" x2="24" y2="24"/><line x1="56" y1="56" x2="64" y2="64"/><line x1="64" y1="16" x2="56" y2="24"/><line x1="24" y1="56" x2="16" y2="64"/></g></svg>
+    </div>
+
+    <header class="job-head">
+      <div class="job-meta mono">
+        <span class="job-num">03</span>
+        <span>Dec 2017 — Oct 2019</span>
+        <span>Bengaluru</span>
+      </div>
+      <h3 class="job-name">HolidayIQ<span class="serif-italic">.</span></h3>
+      <div class="job-role mono">Software Engineer — Core tech</div>
+      <p class="job-tag">India's largest online travel community.</p>
+    </header>
+
+    <div class="job-body">
+      <p class="job-story">
+        First real job. I rebuilt the lead-assignment engine — the platform's revenue heart — and kept it at
+        100% uptime through the migration. Launched a vendor selection model that let users pick their
+        travel agent, and shipped call masking so phone numbers stayed private.
+        Quiet, foundational work. The kind that taught me what "production" actually means.
+      </p>
+
+      <div class="boarding-pass">
+        <div class="bp-section bp-from">
+          <div class="bp-label mono">FROM</div>
+          <div class="bp-value">SDE</div>
+          <div class="bp-sub mono">writing code</div>
+        </div>
+        <div class="bp-arrow">→</div>
+        <div class="bp-section bp-to">
+          <div class="bp-label mono">TO</div>
+          <div class="bp-value">PM</div>
+          <div class="bp-sub mono">writing PRDs</div>
+        </div>
+        <div class="bp-stub">
+          <div class="bp-label mono">SEAT</div>
+          <div class="bp-value sm">17A</div>
+        </div>
+      </div>
+
+      <ul class="metrics metrics-holidayiq">
+        <li>
+          <div class="metric-num">100%</div>
+          <div class="metric-label">uptime on lead engine rebuild</div>
+        </li>
+        <li>
+          <div class="metric-num">+10%</div>
+          <div class="metric-label">lead-to-monetization rate</div>
+        </li>
+        <li>
+          <div class="metric-num">↑ NPS</div>
+          <div class="metric-label">via call-masking + privacy</div>
+        </li>
+      </ul>
+    </div>
+  </article>
+
+</section>
+
+<!-- ============ 03 PROJECTS ============ -->
+<section id="projects" class="section section--projects" data-screen-label="03 Projects">
+
+  <div class="projects-grid-bg" aria-hidden="true"></div>
+
+  <div class="projects-header">
+    <div class="mono dim">03 / Tinkering after hours</div>
+    <h2 class="projects-title">
+      Personal AI tools<br/>
+      <span class="serif-italic">that solve real, slightly-annoying</span><br/>
+      problems.
+    </h2>
+  </div>
+
+  <div class="projects-list">
+
+    <a class="project-card" href="https://techcrunch-digest.vercel.app/" target="_blank" rel="noopener">
+      <div class="project-tag mono"><span class="dot dot-live"></span> live</div>
+      <div class="project-num mono">// 01</div>
+      <h3 class="project-name">TechCrunch Digest</h3>
+      <p class="project-blurb">
+        A daily pipeline that scrapes TechCrunch, summarizes each article, and surfaces the
+        signal — funding moves, product launches, the trends worth knowing about — without
+        making me read 80 headlines a morning.
+      </p>
+      <div class="project-stack mono">
+        <span>scraping</span><span>·</span>
+        <span>llm summarization</span><span>·</span>
+        <span>vercel</span><span>·</span>
+        <span>cron</span>
+      </div>
+      <div class="project-cta mono">
+        <span>open digest</span>
+        <span class="cta-arrow">↗</span>
+      </div>
+      <pre class="project-ascii" aria-hidden="true">┌──────────────┐
+│ ░░░ DIGEST   │
+│ ░░░░░░░░░░░  │
+│ ░░░░░  ░░░░  │
+│ ░░░ → key    │
+└──────────────┘</pre>
+    </a>
+
+    <a class="project-card" href="https://github.com/bucks96/isb-rag-dashboard" target="_blank" rel="noopener">
+      <div class="project-tag mono">github</div>
+      <div class="project-num mono">// 02</div>
+      <h3 class="project-name">ISB Knowledge RAG</h3>
+      <p class="project-blurb">
+        A retrieval-augmented dashboard over ISB's academic knowledge base. Type a real-world
+        business question — pricing, distribution, a market-entry mess — and it pulls the
+        cases and frameworks that actually map to it. Built it because I was tired of grep-ing
+        through PDFs at 2am.
+      </p>
+      <div class="project-stack mono">
+        <span>RAG</span><span>·</span>
+        <span>vector search</span><span>·</span>
+        <span>python</span><span>·</span>
+        <span>dashboard</span>
+      </div>
+      <div class="project-cta mono">
+        <span>open repo</span>
+        <span class="cta-arrow">↗</span>
+      </div>
+      <pre class="project-ascii" aria-hidden="true">[query] ───┐
+           ▼
+       ┌───────┐
+       │ index │
+       └───┬───┘
+       ┌───▼───────┐
+       │ relevant  │
+       │ cases     │
+       └───────────┘</pre>
+    </a>
+
+  </div>
+
+  <div class="projects-aside">
+    <div class="mono dim">also / fyi</div>
+    <p>
+      I won National Runner-up (2nd / 700+) at SDA Bocconi's <em>Prodpreneur</em> for designing
+      a RAG-based GenAI framework for Mojek that wove financial + behavioral data into
+      personalized insights. Same energy as the projects above, but on a deadline.
+    </p>
+  </div>
+
+</section>
+
+<!-- ============ 04 EXTRAS ============ -->
+<section id="extras" class="section section--extras" data-screen-label="04 Extras">
+
+  <!-- SKYDIVE HERO -->
+  <div class="sky-hero">
+    <div class="sky-clouds" aria-hidden="true">
+      <div class="cloud c1"></div>
+      <div class="cloud c2"></div>
+      <div class="cloud c3"></div>
+      <div class="cloud c4"></div>
+    </div>
+
+    <!-- skydiver: falls, hits cloud, opens chute -->
+    <div class="skydiver" id="skydiver" aria-hidden="true">
+      <svg class="sd-figure" viewBox="0 0 60 80">
+        <g class="sd-body" fill="#1f4a78">
+          <circle cx="30" cy="14" r="6"/>
+          <rect x="24" y="20" width="12" height="18" rx="3"/>
+          <rect class="sd-arm sd-arm-l" x="12" y="22" width="14" height="4" rx="2" transform="rotate(-20 19 24)"/>
+          <rect class="sd-arm sd-arm-r" x="34" y="22" width="14" height="4" rx="2" transform="rotate(20 41 24)"/>
+          <rect class="sd-leg sd-leg-l" x="22" y="38" width="5" height="18" rx="2" transform="rotate(-10 24 47)"/>
+          <rect class="sd-leg sd-leg-r" x="33" y="38" width="5" height="18" rx="2" transform="rotate(10 35 47)"/>
+        </g>
+        <g class="sd-chute">
+          <path d="M0 20 Q30 -16 60 20 L52 24 L48 20 L42 24 L36 20 L30 24 L24 20 L18 24 L12 20 L8 24 Z" fill="#e85a3c" stroke="#1f4a78" stroke-width="1"/>
+          <line x1="6" y1="22" x2="22" y2="40" stroke="#1f4a78" stroke-width="1"/>
+          <line x1="22" y1="22" x2="26" y2="40" stroke="#1f4a78" stroke-width="1"/>
+          <line x1="38" y1="22" x2="34" y2="40" stroke="#1f4a78" stroke-width="1"/>
+          <line x1="54" y1="22" x2="38" y2="40" stroke="#1f4a78" stroke-width="1"/>
+        </g>
+      </svg>
+      <!-- puff trail when entering cloud -->
+      <div class="sd-puff"></div>
+    </div>
+    <div class="altimeter mono" aria-hidden="true">
+      <div class="alt-num" id="alt-num">13,000</div>
+      <div class="alt-unit">ft</div>
+      <div class="alt-bar"><div class="alt-fill"></div></div>
+    </div>
+
+    <div class="sky-content">
+      <div class="mono dim">04 / Off-hours</div>
+      <h2 class="sky-title">
+        I jump out<br/>
+        of <span class="serif-italic">perfectly good</span><br/>
+        airplanes.
+      </h2>
+      <p class="sky-lede">
+        Working on my Solo Skydiving License A in France. <strong>8 of 25</strong> qualifying jumps
+        done — the rest will happen between case-study deadlines.
+      </p>
+
+      <div class="sky-progress">
+        <div class="mono dim">License A progress</div>
+        <div class="sky-pips" id="sky-pips" aria-hidden="true"></div>
+        <div class="mono">8 / 25</div>
+      </div>
+
+      <div class="sky-media">
+        <div class="media-tile media-video">
+          <div class="play">▶</div>
+          <span class="mono dim">jump-04.mp4 · uploading later</span>
+        </div>
+        <div class="media-tile media-photo">
+          <span class="mono dim">freefall-grin.jpg</span>
+        </div>
+        <div class="media-tile media-photo">
+          <span class="mono dim">canopy-over-brittany.jpg</span>
+        </div>
+        <div class="media-tile media-video">
+          <div class="play">▶</div>
+          <span class="mono dim">exit-cam.mp4</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BALI POSTCARD -->
+  <div class="bali">
+    <div class="bali-grain"></div>
+
+    <div class="bali-head">
+      <div class="postmark mono">
+        <div class="pm-circle">BALI</div>
+        <div class="pm-line">— ID 80361 —</div>
+        <div class="pm-line">stamped</div>
+      </div>
+      <h2 class="bali-title">A postcard from <span class="serif-italic">Bali</span>.</h2>
+      <p class="bali-lede">Highlights only. The rest stays between me and a warung in Ubud.</p>
+    </div>
+
+    <div class="bali-grid">
+      <div class="bali-card bali-photo p1"><span class="mono dim">ricefields.jpg</span></div>
+      <div class="bali-card bali-text">
+        <div class="card-eyebrow mono">stay</div>
+        <h4>Ubud, then Uluwatu</h4>
+        <p>Jungle for the soul, then cliffs for the view. Two halves of the same trip.</p>
+      </div>
+      <div class="bali-card bali-text">
+        <div class="card-eyebrow mono">eat</div>
+        <h4>Babi guling &amp; jamu</h4>
+        <p>Ibu Oka in Ubud. A jamu shot every morning. A coffee at any kopi-warung that smelled right.</p>
+      </div>
+      <div class="bali-card bali-photo p2"><span class="mono dim">tegallalang.jpg</span></div>
+      <div class="bali-card bali-photo p3"><span class="mono dim">uluwatu-sunset.jpg</span></div>
+      <div class="bali-card bali-text">
+        <div class="card-eyebrow mono">do</div>
+        <h4>Sunrise Batur, surf at Bingin</h4>
+        <p>Batur is worth the 3am alarm. Bingin is worth the bruises.</p>
+      </div>
+      <div class="bali-card bali-text bali-vibe">
+        <div class="card-eyebrow mono">vibe</div>
+        <h4 class="serif-italic">Slow mornings.<br/>Loud nights.<br/>No Wi-Fi guilt.</h4>
+      </div>
+      <div class="bali-card bali-photo p4"><span class="mono dim">scooter-day.jpg</span></div>
+    </div>
+  </div>
+
+  <!-- TRAVEL MAP -->
+  <div class="travels">
+    <div class="travels-head">
+      <div class="mono dim">also been to</div>
+      <h3 class="travels-title">A scattered travel map</h3>
+    </div>
+    <div class="map-wrap">
+      <svg class="world-map" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+        <!-- abstract dotted world (very stylized, dot grid) -->
+        <g id="dotgrid"></g>
+        <g id="pins"></g>
+      </svg>
+      <div class="map-list" id="map-list">
+        <!-- populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- BADMINTON -->
+  <div class="badminton">
+    <div class="court-lines" aria-hidden="true"></div>
+    <div class="badminton-content">
+      <div class="mono dim">also</div>
+      <h2 class="badminton-title">
+        Badminton, <span class="serif-italic">competitively</span><br/>and against my landlord's son.
+      </h2>
+      <p class="badminton-lede">
+        Played since BITS. Will accept any 8pm court invite within 30 minutes' drive.
+      </p>
+
+      <div class="badminton-stats">
+        <div class="stat">
+          <div class="stat-num">3×</div>
+          <div class="stat-label mono">/ week</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">~14yrs</div>
+          <div class="stat-label mono">on court</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label mono">racket. always.</div>
+        </div>
+      </div>
+
+      <div class="badminton-media">
+        <div class="media-tile media-photo"><span class="mono dim">smash.jpg · soon</span></div>
+        <div class="media-tile media-video"><div class="play">▶</div><span class="mono dim">rally.mp4 · soon</span></div>
+        <div class="media-tile media-photo"><span class="mono dim">trophy-shelf.jpg · soon</span></div>
+      </div>
+
+      <svg class="shuttle" viewBox="0 0 60 80" aria-hidden="true">
+        <ellipse cx="30" cy="20" rx="10" ry="7" fill="#fff" stroke="#1a3a2a" stroke-width="1.2"/>
+        <path d="M20 22 L8 70" stroke="#fff" stroke-width="1.5"/>
+        <path d="M25 22 L20 72" stroke="#fff" stroke-width="1.5"/>
+        <path d="M30 22 L30 75" stroke="#fff" stroke-width="1.5"/>
+        <path d="M35 22 L40 72" stroke="#fff" stroke-width="1.5"/>
+        <path d="M40 22 L52 70" stroke="#fff" stroke-width="1.5"/>
+        <path d="M8 70 Q30 78 52 70" stroke="#fff" stroke-width="1.5" fill="none"/>
+      </svg>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-block">
+      <div class="mono dim">say hi</div>
+      <a href="mailto:vibhav.sachan.vs@gmail.com" class="footer-link">vibhav.sachan.vs@gmail.com</a>
+      <a href="tel:+917729048222" class="footer-link mono">+91 77290 48222</a>
+    </div>
+    <div class="footer-block">
+      <div class="mono dim">elsewhere</div>
+      <a href="https://www.linkedin.com/in/vaibhav-sachan-pm/" class="footer-link" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="https://github.com/bucks96" class="footer-link" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+    <div class="footer-block footer-sig">
+      <div class="serif-italic huge">— V.</div>
+      <div class="mono dim">made with too much coffee, somewhere over the bay of bengal.</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ VIRTUAL INTERVIEW CHAT ============ -->
+<div class="vi-root" id="vi-root">
+
+  <!-- Floating launcher button (collapsed state) -->
+  <button class="vi-launcher" id="vi-launcher" aria-label="Open virtual interview" aria-expanded="false">
+    <span class="vi-launcher-mascot" aria-hidden="true">
+      <svg viewBox="0 0 40 40">
+        <circle cx="20" cy="20" r="19" fill="#f4ede1"/>
+        <!-- head -->
+        <circle cx="20" cy="15" r="5" fill="#1a1714"/>
+        <!-- hair tuft -->
+        <path d="M16 11 q1 -3 4 -3 q3 0 4 3" stroke="#1a1714" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <!-- body -->
+        <path d="M11 32 q0 -10 9 -10 q9 0 9 10 z" fill="#1a1714"/>
+        <!-- eyes -->
+        <circle cx="18" cy="14.5" r="0.8" fill="#f4ede1"/>
+        <circle cx="22" cy="14.5" r="0.8" fill="#f4ede1"/>
+        <!-- smile -->
+        <path d="M17.5 17.5 q2.5 1.5 5 0" stroke="#f4ede1" stroke-width="1" fill="none" stroke-linecap="round"/>
+      </svg>
+    </span>
+    <span class="vi-launcher-label">
+      <span class="vi-launcher-eyebrow">Ask Vaibhav</span>
+      <span class="vi-launcher-title">Virtual interview</span>
+    </span>
+    <span class="vi-launcher-chev" aria-hidden="true">↑</span>
+  </button>
+
+  <!-- Chat window (expands upward from button) -->
+  <section class="vi-window" id="vi-window" role="dialog" aria-labelledby="vi-title" aria-hidden="true">
+
+    <header class="vi-header">
+      <div class="vi-header-left">
+        <span class="vi-status-dot" aria-hidden="true"></span>
+        <div class="vi-header-text">
+          <div class="mono vi-eyebrow">— virtual interview · beta</div>
+          <div class="vi-title" id="vi-title">A little me, in your sidebar</div>
+        </div>
+      </div>
+      <button class="vi-close" id="vi-close" aria-label="Close virtual interview">×</button>
+    </header>
+
+    <div class="vi-stream" id="vi-stream" aria-live="polite">
+      <!-- intro greeting -->
+      <div class="vi-row vi-row--bot">
+        <div class="vi-mascot" aria-hidden="true">
+          <svg viewBox="0 0 50 50">
+            <circle cx="25" cy="25" r="24" fill="#f4ede1" stroke="#c9bfb0" stroke-width="1"/>
+            <circle cx="25" cy="20" r="6" fill="#1a1714"/>
+            <path d="M20 15 q1 -4 5 -4 q4 0 5 4" stroke="#1a1714" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M14 40 q0 -12 11 -12 q11 0 11 12 z" fill="#1a1714"/>
+            <circle cx="22.5" cy="19.5" r="0.9" fill="#f4ede1"/>
+            <circle cx="27.5" cy="19.5" r="0.9" fill="#f4ede1"/>
+            <path d="M22.5 22.5 q2.5 2 5 0" stroke="#f4ede1" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+            <!-- waving hand -->
+            <circle cx="38" cy="26" r="2.2" fill="#1a1714" class="vi-mascot-wave"/>
+          </svg>
+        </div>
+        <div class="vi-bubble">
+          <p class="vi-bubble-strong">Hi — I'm a tiny stand-in for Vaibhav.</p>
+          <p>You can type any question here and get a real answer about him — work, projects, why someone keeps jumping out of planes, anything.</p>
+          <p class="vi-bubble-soft">Answers come from a small RAG over his notes and case studies. I'm honest about what I don't know.</p>
+        </div>
+      </div>
+
+      <!-- suggested chips -->
+      <div class="vi-suggested" id="vi-suggested">
+        <div class="mono vi-suggested-label">Try asking ↓</div>
+        <div class="vi-chips">
+          <button class="vi-chip" data-q="What did you actually ship at Supertails?">What did you ship at Supertails?</button>
+          <button class="vi-chip" data-q="Walk me through the in-app game you built.">The in-app game story</button>
+          <button class="vi-chip" data-q="Why an MBA at ISB after engineering and PM roles?">Why ISB now?</button>
+          <button class="vi-chip" data-q="What's a product decision you got wrong?">A decision you got wrong</button>
+          <button class="vi-chip" data-q="How did skydiving change how you work?">Skydiving × work</button>
+        </div>
+      </div>
+    </div>
+
+    <form class="vi-composer" id="vi-composer" autocomplete="off">
+      <input
+        class="vi-input"
+        id="vi-input"
+        type="text"
+        placeholder="Ask me anything…"
+        aria-label="Type your question"
+        maxlength="240"
+      />
+      <button class="vi-send" type="submit" aria-label="Send">
+        <svg viewBox="0 0 16 16" width="14" height="14">
+          <path d="M2 8 L14 8 M9 3 L14 8 L9 13" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="vi-foot mono">
+        <span>↵ to send</span>
+        <span class="vi-foot-dot">·</span>
+        <span>powered by RAG over Vaibhav's notes</span>
+      </div>
+    </form>
+
+  </section>
+</div>
+
+<script src="map.js"></script>
+<script src="app.js"></script>
+<script src="virtual-interview.js"></script>
+
+<!-- React + Babel for tweaks panel -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<div id="tweaks-root"></div>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="tweaks-app.jsx"></script>
+
+</body>
+</html>
