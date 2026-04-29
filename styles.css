@@ -1027,14 +1027,29 @@ body.chrome-sky .chrome-nav a:hover { color: #fff; }
 .bali-card:hover { transform: translateY(-4px); box-shadow: 0 18px 30px -16px rgba(91,46,28,0.3); }
 .bali-photo {
   background: var(--bali-deep);
-  background-image:
-    repeating-linear-gradient(45deg, rgba(255,255,255,0.04) 0 8px, transparent 8px 9px);
+  background-size: cover;
+  background-position: center;
   color: rgba(255,255,255,0.5);
 }
 .bali-photo.p1 { grid-column: span 2; grid-row: span 2; background-color: #8a4a2a; }
 .bali-photo.p2 { grid-column: span 1; background-color: #b8853f; }
 .bali-photo.p3 { grid-column: span 2; background-color: #d97b3f; }
 .bali-photo.p4 { grid-column: span 1; background-color: #5b2e1c; }
+.bali-photo.p5 { grid-column: span 1; background-color: #7a3520; }
+.bali-photo.p6 { grid-column: span 1; background-color: #4a2015; }
+.bali-photo.p7 { grid-column: span 1; background-color: #6b3a2a; }
+.photo-label {
+  position: relative;
+  z-index: 2;
+  align-self: flex-start;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #5c4a3a;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: rgba(255,255,255,0.85);
+}
 .bali-text {
   background: var(--paper);
   color: var(--bali-deep);

@@ -49,17 +49,17 @@
 
   // pins (rough x,y in viewbox)
   const places = [
-    { name: 'Bali, Indonesia', x: 800, y: 285, hero: true },
-    { name: 'Paris, France', x: 490, y: 130 },
-    { name: 'Lille, France', x: 488, y: 122 },
-    { name: 'Brittany, France', x: 478, y: 132 },
-    { name: 'Milan, Italy', x: 502, y: 138 },
-    { name: 'Bangkok, Thailand', x: 745, y: 235 },
-    { name: 'Singapore', x: 762, y: 268 },
-    { name: 'Dubai, UAE', x: 615, y: 192 },
-    { name: 'Kathmandu, Nepal', x: 700, y: 180 },
-    { name: 'Goa, India', x: 660, y: 215 },
-    { name: 'Leh-Ladakh, India', x: 680, y: 158 },
+    { name: 'Bali, Indonesia', x: 820, y: 273, hero: true },
+    { name: 'Paris, France', x: 507, y: 114 },
+    { name: 'Lausanne, Switzerland', x: 518, y: 121 },
+    { name: 'Geneva, Switzerland', x: 517, y: 122 },
+    { name: 'San Sebastian, Spain', x: 495, y: 130 },
+    { name: 'Bangkok, Thailand', x: 779, y: 212 },
+    { name: 'Singapore', x: 788, y: 246 },
+    { name: 'Kuala Lumpur, Malaysia', x: 783, y: 241 },
+    { name: 'Kathmandu, Nepal', x: 737, y: 173 },
+    { name: 'Goa, India', x: 705, y: 208 },
+    { name: 'Leh-Ladakh, India', x: 716, y: 155 },
   ];
 
   let pinsHTML = '';
