@@ -1,0 +1,11 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compress": "node compress.js"
+  },
+  "dependencies": {
+    "sharp": "^0.32.6"
+  }
+}
