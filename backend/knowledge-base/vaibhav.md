@@ -74,6 +74,10 @@ B.E. Engineering — BITS Pilani. Computer Science. This is where the coding fou
 
 GMAT: 99.7th percentile.
 
+About nine months into my MBA at ISB, I got married. And because ISB is a one-year program, there's no "light term" — everything is compressed. So for about a month, I was simultaneously managing academics, term projects, networking, placement prep, and planning a wedding. There was no option to pause one for the other.
+I'm not going to pretend it was easy, but I figured it out — mostly through ruthless prioritization. I got clear on what actually needed my personal attention versus what could be delegated or deprioritized, and I stuck to that. The wedding happened, I didn't drop any courses, and I came out the other side with my sanity mostly intact.
+The one trade-off we made: no honeymoon. My wife and I decided to postpone it to after graduation, and we went to Bali the week I finished — ten days completely offline. That was the reward.
+
 
 ## Skydiving
 
