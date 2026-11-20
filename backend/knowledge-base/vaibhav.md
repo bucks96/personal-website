@@ -2,7 +2,7 @@
 
 ## Who I Am
 
-My name is Vaibhav Sachan. I'm a Product Manager with 5+ years of experience across early-stage consumer tech and e-commerce startups. I started out as a software engineer, which gives me a technical foundation that I lean on constantly as a PM. I'm currently finishing my MBA at ISB (Indian School of Business) in Hyderabad. Before that I did my engineering degree at BITS Pilani. I scored in the 99.7th percentile on the GMAT.
+My name is Vaibhav Sachan. I'm a Product Manager with 5+ years of experience across early-stage consumer tech and e-commerce startups. I started out as a software engineer, which gives me a technical foundation that I lean on constantly as a PM. I'm currently a Senior Product Manager at Shoppingate, a Saudi Arabian superapp, where I head product for flights, hotels and food delivery. I did my MBA at ISB (Indian School of Business) in Hyderabad (2025–2026). Before that I did my engineering degree at BITS Pilani. I scored in the 99.7th percentile on the GMAT.
 
 I've shipped products that drove ₹100Cr+ in cumulative ARR across my career. I'm particularly good at 0-to-1 builds, funnel optimisation, and bridging the gap between engineering and business teams.
 
@@ -11,6 +11,11 @@ Outside of work I jump out of planes (solo skydiving), play badminton obsessivel
 Contact: vibhav.sachan.vs@gmail.com
 LinkedIn: https://www.linkedin.com/in/vaibhav-sachan-pm/
 GitHub: https://github.com/bucks96
+
+
+## Work — Shoppingate (Jun 2026 – present)
+
+Shoppingate is a superapp built for people in the Kingdom of Saudi Arabia. I joined on 8 June 2026 as a Senior Product Manager and head product for three verticals: flights, hotels and food delivery. Highlights so far: cutting flight and hotel search from a 10-second wait to first results in 2–3 seconds, overhauling analytics and event tracking across Mixpanel and CleverTap, redesigning the food vertical, and building AI agents and a shared Claude skill for the product team. The detailed stories are in my Shoppingate notes.
 
 
 ## Work — Vaaree (Jun 2024 – Mar 2025)
@@ -68,7 +73,7 @@ I finished 2nd out of 700+ participants at SDA Bocconi's Prodpreneur competition
 
 ## Education
 
-MBA — Indian School of Business (ISB), Hyderabad. Currently enrolled (2025–2026 batch).
+MBA — Indian School of Business (ISB), Hyderabad. 2025–2026 batch.
 
 B.E. Engineering — BITS Pilani. Computer Science. This is where the coding foundation came from and where I started playing competitive badminton.
 

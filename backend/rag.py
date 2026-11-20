@@ -17,7 +17,10 @@ TOP_K = 5
 # Only retrieved when the visitor raises UPSC or the 2019–2021 gap themselves
 GATED_SOURCE = "upsc.md"
 GATED_TRIGGERS = re.compile(
-    r"\b(upsc|civil services?|ias|gap|break|sabbatical|2020|between holidayiq and supertails)\b|2019.{0,20}2021",
+    r"\b(upsc|civil services?|ias|sabbatical|career break|gap year|2020|between holidayiq and supertails)\b"
+    r"|\b(career|resume|cv|employment|two[- ]year|2[- ]year)\s+gap"
+    r"|\bgaps? in (your |his )?(career|resume|cv|work history|employment)"
+    r"|\b(take|took|taking) a break|2019.{0,20}2021",
     re.IGNORECASE,
 )
 
