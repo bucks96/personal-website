@@ -46,7 +46,7 @@ HolidayIQ was India's largest online travel community at the time. I joined as a
 
 My main project was rebuilding the lead-assignment engine — the system that matched travel intent signals to travel agents, which was the core of the platform's monetisation. I rebuilt it from scratch and maintained 100% uptime through the migration, which was the most technically demanding thing I'd done at that point.
 
-I also built a vendor selection feature that let users choose their travel agent from a shortlist, and shipped call masking so that phone numbers between users and agents stayed private.
+At HolidayIQ I also built a vendor selection feature that let users choose their travel agent from a shortlist, and shipped call masking so that phone numbers between users and agents stayed private.
 
 The role taught me engineering discipline, and being close to the business gave me an early hunger to move into product. The SDE-to-PM transition happened a couple of years later when I joined Supertails.
 
@@ -105,9 +105,3 @@ I'm most energised at the intersection of ambiguity and data — places where yo
 I take deadlines seriously, probably from the engineering years. I also have a tendency to get very specific about metrics — if a project doesn't have a number attached to it I get anxious.
 
 Outside of work I try to create situations that force genuine focus: a skydive doesn't let you be distracted, a badminton rally doesn't either. I think that's part of why I keep coming back to both.
-
-
-## UPSC journey and why I decided to do it
-
-Honestly, the decision came from the same place that draws me to product management — I wanted to work on problems that matter at scale and see the direct impact on people's lives.
-Civil services felt like the most direct way to do that at the time.

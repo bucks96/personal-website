@@ -47,7 +47,36 @@ def load_documents() -> list[dict]:
     return docs
 
 
+def split_sections(text: str) -> list[tuple[str, str]]:
+    """Split markdown into (heading, body) pairs on lines starting with '#'."""
+    sections: list[tuple[str, str]] = []
+    heading, lines = "", []
+    for line in text.splitlines():
+        if line.startswith("#"):
+            if "\n".join(lines).strip():
+                sections.append((heading, "\n".join(lines)))
+            heading, lines = line.lstrip("#").strip().rstrip(":"), []
+        else:
+            lines.append(line)
+    if "\n".join(lines).strip():
+        sections.append((heading, "\n".join(lines)))
+    return sections
+
+
 def chunk(text: str, source: str) -> list[dict]:
+    # Chunk each section separately and prefix every chunk with its file + heading,
+    # so a chunk never loses track of which company / topic it belongs to
+    label = Path(source).stem.replace("-", " ")
+    chunks: list[dict] = []
+    for heading, body in split_sections(text):
+        prefix = f"[{label} — {heading}] " if heading else f"[{label}] "
+        for c in chunk_paragraphs(body, source):
+            c["text"] = prefix + c["text"]
+            chunks.append(c)
+    return chunks
+
+
+def chunk_paragraphs(text: str, source: str) -> list[dict]:
     # Split on blank lines (paragraph boundaries)
     paragraphs = [p.strip() for p in re.split(r"\n\s*\n", text) if p.strip()]
 

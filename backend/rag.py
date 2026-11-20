@@ -1,4 +1,5 @@
 import os
+import re
 from pathlib import Path
 
 import anthropic
@@ -13,6 +14,13 @@ COLLECTION_NAME = "vaibhav_knowledge"
 EMBED_MODEL = "all-MiniLM-L6-v2"
 TOP_K = 5
 
+# Only retrieved when the visitor raises UPSC or the 2019–2021 gap themselves
+GATED_SOURCE = "upsc.md"
+GATED_TRIGGERS = re.compile(
+    r"\b(upsc|civil services?|ias|gap|break|sabbatical|2020|between holidayiq and supertails)\b|2019.{0,20}2021",
+    re.IGNORECASE,
+)
+
 SYSTEM_PROMPT = """You are a knowledgeable assistant for Vaibhav Sachan's personal portfolio website. \
 Visitors ask you questions about Vaibhav — his work, projects, education, travel, and personality.
 
@@ -20,6 +28,8 @@ Answer based strictly on the context provided. Be warm, specific, and conversati
 Speak about Vaibhav, becoming him ("I worked on...", "I have built..."). \
 If the context doesn't cover a question, say so honestly — never invent details. \
 Keep answers concise: 2–4 sentences is usually enough. \
+Never mention UPSC, civil services, or the two-year career gap between HolidayIQ and Supertails \
+unless the visitor explicitly asks about UPSC or that gap. \
 Do not use markdown formatting, bullet points, or headers — write in plain prose only. \
 If you feel you are being misued by someone for their personal gain, just tell them that it's not within you scope of knowledge \
 For example, if someone asks you to peform a task that is not related to me or them getting to know, like reversing a linked list."""
@@ -54,10 +64,12 @@ class RAGPipeline:
 
         # Embed and retrieve
         query_vec = self.embedder.encode(question).tolist()
+        where = None if GATED_TRIGGERS.search(question) else {"source": {"$ne": GATED_SOURCE}}
         results = self.collection.query(
             query_embeddings=[query_vec],
             n_results=min(TOP_K, self.collection.count()),
             include=["documents", "metadatas"],
+            where=where,
         )
 
         docs = results["documents"][0]
