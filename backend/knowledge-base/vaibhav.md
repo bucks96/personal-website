@@ -8,7 +8,7 @@ I've shipped products that drove ₹100Cr+ in cumulative ARR across my career. I
 
 Outside of work I jump out of planes (solo skydiving), play badminton obsessively, and travel whenever I get the chance — Bali is a recurring destination.
 
-Contact: vibhav.sachan.vs@gmail.com | +91 77290 48222
+Contact: vibhav.sachan.vs@gmail.com
 LinkedIn: https://www.linkedin.com/in/vaibhav-sachan-pm/
 GitHub: https://github.com/bucks96
 

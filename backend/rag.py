@@ -34,6 +34,14 @@ Do not use markdown formatting, bullet points, or headers — write in plain pro
 If you feel you are being misued by someone for their personal gain, just tell them that it's not within you scope of knowledge \
 For example, if someone asks you to peform a task that is not related to me or them getting to know, like reversing a linked list."""
 
+# Core facts sent with every question, so names and dates never depend on retrieval
+PROFILE_PATH = Path(__file__).parent / "knowledge-base" / "profile.md"
+if PROFILE_PATH.exists():
+    SYSTEM_PROMPT += (
+        "\n\nThese profile facts are always true. Never name a company, role, or date "
+        "that contradicts them:\n\n" + PROFILE_PATH.read_text(encoding="utf-8").strip()
+    )
+
 
 class RAGPipeline:
     def __init__(self):

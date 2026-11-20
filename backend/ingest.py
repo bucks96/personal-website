@@ -16,9 +16,13 @@ CHROMA_DIR = Path(__file__).parent / "chroma_db"
 COLLECTION_NAME = "vaibhav_knowledge"
 EMBED_MODEL = "all-MiniLM-L6-v2"
 
-# Approx word counts for chunking
-CHUNK_WORDS = 180
-OVERLAP_WORDS = 30
+# Sent whole with every question by rag.py, so not chunked
+SKIP_FILES = {"README.md", "profile.md"}
+
+# Approx word counts for chunking. Each section is chunked on its own, so this
+# only splits sections longer than CHUNK_WORDS — keep it above the longest story
+CHUNK_WORDS = 500
+OVERLAP_WORDS = 40
 
 
 def load_documents() -> list[dict]:
@@ -26,7 +30,7 @@ def load_documents() -> list[dict]:
     supported = {".md", ".txt"}
 
     for path in sorted(KNOWLEDGE_DIR.glob("**/*")):
-        if path.suffix.lower() in supported and path.name != "README.md":
+        if path.suffix.lower() in supported and path.name not in SKIP_FILES:
             text = path.read_text(encoding="utf-8").strip()
             if text:
                 docs.append({"text": text, "source": path.name})
