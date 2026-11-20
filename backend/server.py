@@ -17,7 +17,18 @@ load_dotenv(Path(__file__).parent / ".env")
 from rag import RAGPipeline
 
 STATIC_DIR = Path(__file__).parent.parent
-DB_PATH = Path(__file__).parent / "interactions.db"
+# Railway sets RAILWAY_VOLUME_MOUNT_PATH when a volume is attached, so the log survives redeploys
+DATA_DIR = Path(os.environ.get("RAILWAY_VOLUME_MOUNT_PATH", Path(__file__).parent))
+DB_PATH = DATA_DIR / "interactions.db"
+
+# Comma-separated list, e.g. "https://vaibhavsachan.com,https://www.vaibhavsachan.com"
+ALLOWED_ORIGINS = [
+    o.strip()
+    for o in os.environ.get(
+        "ALLOWED_ORIGINS", "http://localhost:8000,http://127.0.0.1:8000"
+    ).split(",")
+    if o.strip()
+]
 
 rag: RAGPipeline | None = None
 
@@ -67,7 +78,7 @@ app = FastAPI(lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=ALLOWED_ORIGINS,
     allow_methods=["POST", "GET"],
     allow_headers=["Content-Type"],
 )
