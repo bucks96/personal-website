@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "compress": "node compress.js"
+    "compress": "node compress.js",
+    "build:tweaks": "cat tweaks-panel.jsx tweaks-app.jsx | esbuild --loader=jsx --minify --target=es2019 > tweaks.js"
   },
   "dependencies": {
-    "@vercel/analytics": "^2.0.1",
     "sharp": "^0.32.6"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.2"
   }
 }
