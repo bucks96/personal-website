@@ -107,6 +107,7 @@
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ question }),
     });
+    if (res.status === 429) throw new Error('rate-limited');
     if (!res.ok) throw new Error(`Server error ${res.status}`);
     const data = await res.json();
     return data.answer;
@@ -132,10 +133,12 @@
       const answer = await askRAG(q);
       typingRow.remove();
       appendBot(formatAnswer(answer));
-    } catch (_err) {
+    } catch (err) {
       typingRow.remove();
       appendBot(
-        '<p class="vi-bubble-soft">Something went wrong — please try again in a moment.</p>'
+        err.message === 'rate-limited'
+          ? '<p class="vi-bubble-soft">You\'ve asked a lot of questions in a short time — give it a little while, or just email me at vibhav.sachan.vs@gmail.com.</p>'
+          : '<p class="vi-bubble-soft">Something went wrong — please try again in a moment.</p>'
       );
     } finally {
       setInputLocked(false);
