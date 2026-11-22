@@ -2304,3 +2304,19 @@ body.chrome-dark .chrome-resume:hover { background: var(--projects-acc); color: 
 @media (max-width: 640px) {
   .bc--sky, .bc--dogs, .bc--ai, .bc--ideas { grid-column: 1 / -1; }
 }
+
+/* Dogs tab: two overlapping polaroids of Ginny */
+.dog-polaroids { position: relative; padding: 0 12% 22% 0; }
+.dog-polaroids figure { margin: 0; }
+.dog-polaroid--main { transform: rotate(-2.5deg); }
+.dog-polaroid--second {
+  position: absolute; right: 0; bottom: 0; width: 52%;
+  transform: rotate(4deg); z-index: 2; padding: 10px 10px 12px;
+}
+.dog-polaroid--second .dog-photo { aspect-ratio: 3/4; }
+.dog-polaroid--second .dog-polaroid-caption { font-size: 20px; margin-top: 8px; }
+.dog-polaroid--second:hover { transform: rotate(0deg) translateY(-4px); z-index: 3; }
+.foster-photo { aspect-ratio: 4/3; }
+@media (max-width: 900px) {
+  .dog-polaroids { max-width: 380px; }
+}
