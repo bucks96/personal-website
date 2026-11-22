@@ -2267,7 +2267,7 @@ body.chrome-dark .chrome-resume:hover { background: var(--projects-acc); color: 
   background: repeating-linear-gradient(135deg, rgba(0,0,0,0.05) 0 10px, rgba(0,0,0,0.09) 10px 20px);
 }
 .bc-photo > .mono { font-size: 10px; opacity: 0.65; }
-.bc-photo--sky { aspect-ratio: 1458/634; background: repeating-linear-gradient(135deg, rgba(255,255,255,0.18) 0 10px, rgba(255,255,255,0.28) 10px 20px); margin-bottom: 2px; }
+.bc-photo--sky { aspect-ratio: 16/9; background: repeating-linear-gradient(135deg, rgba(255,255,255,0.18) 0 10px, rgba(255,255,255,0.28) 10px 20px); margin-bottom: 2px; }
 .bc--sky .bc-canopy { top: auto; bottom: 74px; right: 16px; width: 54px; }
 .bc-dogpics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
 .bc-dogpics figure { margin: 0; display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
@@ -2280,7 +2280,7 @@ body.chrome-dark .chrome-resume:hover { background: var(--projects-acc); color: 
 /* skydive tab: one big photo */
 .sky-photo { margin: 0; max-width: 620px; }
 .sky-photo-frame {
-  position: relative; overflow: hidden; aspect-ratio: 1458/634; border-radius: 6px;
+  position: relative; overflow: hidden; aspect-ratio: 16/9; border-radius: 6px;
   border: 1px solid rgba(255,255,255,0.35);
   background: repeating-linear-gradient(135deg, rgba(255,255,255,0.14) 0 14px, rgba(255,255,255,0.22) 14px 28px);
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
