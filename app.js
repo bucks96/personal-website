@@ -46,10 +46,8 @@
 
   function onScroll() {
     const y = window.scrollY + window.innerHeight * 0.4;
-    let active = sections[0].id;
-    sections.forEach(s => {
-      if (s.el && s.el.offsetTop <= y) active = s.id;
-    });
+    // one section is visible at a time (tabs.js sets body[data-tab])
+    const active = body.dataset.tab || sections[0].id;
     navLinks.forEach(a => {
       a.classList.toggle('active', a.dataset.nav === active);
     });
@@ -71,16 +69,7 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  // smooth scroll for nav
-  navLinks.forEach(a => {
-    a.addEventListener('click', e => {
-      const id = a.getAttribute('href').slice(1);
-      const target = document.getElementById(id);
-      if (!target) return;
-      e.preventDefault();
-      window.scrollTo({ top: target.offsetTop - 40, behavior: 'smooth' });
-    });
-  });
+  // nav clicks are handled by tabs.js (hash routing)
 
   // cursor glow
   const glow = document.createElement('div');
@@ -107,8 +96,7 @@
   };
   function updateGlow() {
     const y = window.scrollY + window.innerHeight * 0.5;
-    let active = 'intro';
-    sections.forEach(s => { if (s.el && s.el.offsetTop <= y) active = s.id; });
+    const active = document.body.dataset.tab || 'intro';
     glow.style.background = `radial-gradient(circle, ${glowColors[active]} 0%, transparent 60%)`;
   }
   window.addEventListener('scroll', updateGlow, { passive: true });

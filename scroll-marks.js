@@ -203,7 +203,7 @@
     const hero = document.querySelector('.sky-hero');
     const host = document.getElementById('jump-profile');
     if (!hero || !host) return;
-    const media = hero.querySelector('.sky-media');
+    const media = null; // the photo sits left, so the path can use the full height
     let path, ghost, marker, altEl, wps = [], fd = 0.5, total = 1, W = 230, H = 600;
 
     function layout() {
